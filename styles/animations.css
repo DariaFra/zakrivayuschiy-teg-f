@@ -114,8 +114,8 @@
     fill: var(--color);
 }
 
-@keyframes filter-image {
+@keyframes filter {
     to {
-        filter: hue-rotate(0.5turn);
+        filter: hue-rotate(-40deg);
     }
 }
