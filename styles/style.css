@@ -24,7 +24,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: var(--color, #000);
-  width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  width: var(--content-container);
   margin-inline: auto;
 }
 
@@ -124,7 +124,6 @@
 .card {
   background-color: var(--background-color, #fff);
   margin-bottom: 50px;
-  margin-inline: auto;
   border: 2px solid var(--color, #000);
 }
 
@@ -337,7 +336,7 @@
   animation: filter 2s linear infinite;
 }
 
-@media (width < 500px) {
+@media (width < 550px) {
   .page {
     width: 100%;
   }
