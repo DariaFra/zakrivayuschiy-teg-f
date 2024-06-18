@@ -8,8 +8,13 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: transparent;
+}
+
 body {
   margin: 0;
+  font-size: 16px;
 }
 
 h1,
@@ -35,6 +40,9 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
 }
 
 ul,
