@@ -164,7 +164,6 @@
   text-shadow: 0 0 1px var(--color, #000);
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: var(--label-shadow);
 }
 
 @supports (-webkit-text-stroke: 1px var(--color)) or (text-stroke: 1px var(--color)) {
