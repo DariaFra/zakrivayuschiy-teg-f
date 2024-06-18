@@ -124,7 +124,7 @@
 .card {
   background-color: var(--background-color, #fff);
   margin-bottom: 50px;
-  width: var(--content-container);
+  margin-inline: auto;
   border: 2px solid var(--color, #000);
 }
 
