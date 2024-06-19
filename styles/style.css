@@ -347,7 +347,7 @@
     min-block-size: 327px;
   }
 
-  .header__title {
+  .header__logo {
     margin-block-start: 120px;
   }
 
@@ -361,11 +361,6 @@
     height: 84px;
     flex-direction: column;
   }
-
-  /* .flooppy-disk {
-    width: 28px;
-    height: 28px;
-  } */
 
   .dialog {
     padding-inline: 40px;
