@@ -40,36 +40,36 @@
 
 .like-icon:hover .core {
     cursor: pointer;
-    fill: var(--color);
+    fill: var(--major-color, #000);
 }
 
 .like-icon:hover .main-body {
     cursor: pointer;
-    fill: var(--color);
+    fill: var(--major-color, #000);
     transition-delay: 0.05s;
 }
 
 .like-icon:active .core {
-    fill: var(--heart-main-body);
+    fill: var(--heart-main-body, #FF0000);
 }
 
 .like-icon:active .main-body {
-    fill: var(--heart-main-body);
+    fill: var(--heart-main-body, #FF0000);
     transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
-    fill: var(--heart-main-body);
+    fill: var(--heart-main-body, #FF0000);
 }
 
 .like-icon.is-liked .main-body {
-    fill: var(--heart-main-body);
+    fill: var(--heart-main-body, #FF0000);
     transition-delay: 0.03s;
 }
 
 .like-icon.is-liked .contour {
     transition: fill 0.3s linear;
-    fill: var(--heart-main-body);
+    fill: var(--heart-main-body, #FF0000);
     transition-delay: 0.06s;
 }
 
@@ -111,7 +111,7 @@
 
 .like-icon .contour {
     transition: fill 0.1s linear;
-    fill: var(--color);
+    fill: var(--major-color, #000);
 }
 
 @keyframes filter {

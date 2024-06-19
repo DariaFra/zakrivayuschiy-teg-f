@@ -8,7 +8,7 @@
   --font-size-subtitle: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --content-container: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --background-color: #fff;
-  --color: #000;
+  --major-color: #000;
   --color-like-button: #fff;
   --heart-contour: #000;
   --heart-sparks: #FF0000;
