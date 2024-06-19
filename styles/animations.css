@@ -114,7 +114,7 @@
     fill: var(--major-color, #000);
 }
 
-@keyframes filter {
+@keyframes filter-animation {
     to {
         filter: hue-rotate(-40deg);
     }

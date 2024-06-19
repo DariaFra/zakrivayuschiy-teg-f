@@ -20,8 +20,8 @@
 
 <body class="page">
   <header class="header">
-    <h1 class="header__title">&lt;/HTML&gt;</h1>
-    <p class="header__subtitle">закрывающий тег</p>
+    <span class="header__logo">&lt;/HTML&gt;</span>
+    <h1 class="header__title">закрывающий тег</h1>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <ul class="theme-menu__list">
@@ -50,7 +50,7 @@
           <article class="card">
             <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
             <div class="card__content">
-              <img class="card__content-image" src="./images/image-1.jpg" alt="фургон">
+              <img class="card__content-image" loading="lazy" src="./images/image-1.jpg" alt="фургон">
               <span class="card__label">&lt;/HTML&gt;</span>
             </div>
             <p class="card__content-text">Это было самое начало пути. На этом этапе важно было проникнуться
@@ -83,7 +83,8 @@
           <article class="card">
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="card__content">
-              <img class="card__content-image  card-clean-sheet" src="./images/happy.gif" alt="улыбающийся смайл">
+              <img class="card__content-image  filter-conrtast-blur" loading="lazy" src="./images/happy.gif"
+                alt="улыбающийся смайл">
               <span class="card__label">&lt;let's go&gt;</span>
             </div>
             <p class="card__content-text">На первых этапах мы работали со страхами и сомнениями, которые часто
@@ -117,7 +118,7 @@
           <article class="card ">
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="card__content">
-              <img class="card__content-image card-what-if-not" src="./images/this-is-fine.jpg"
+              <img class="card__content-image filter-brightness" loading="lazy" src="./images/this-is-fine.jpg"
                 alt="пес в горящей комнате">
               <span class="card__label">&lt;WATT&gt;</span>
             </div>
@@ -151,7 +152,8 @@
           <article class="card">
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="card__content">
-              <img class="card__content-image card-ideal" src="./images/strong.gif" alt="курица культурист">
+              <img class="card__content-image filter-opacity-contrast" loading="lazy" src="./images/strong.gif"
+                alt="курица культурист">
               <span class="card__label">&lt;desigions&gt;</span>
             </div>
             <p class="card__content-text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять,
@@ -184,7 +186,8 @@
           <article class="card">
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="card__content">
-              <img class="card__content-image card-nearby" src="./images/got-this.gif" alt="пингвин в очках">
+              <img class="card__content-image filter-blur" loading="lazy" src="./images/got-this.gif"
+                alt="пингвин в очках">
               <span class="card__label">&lt;care&gt;</span>
             </div>
             <p class="card__content-text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что
@@ -218,7 +221,7 @@
           <article class="card">
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="card__content">
-              <img class="card__content-image card-strategies" src="./images/mind.gif"
+              <img class="card__content-image filter-grayscale" loading="lazy" src="./images/mind.gif"
                 alt="мозг с табличной 'you mind matters'">
               <span class="card__label">&lt;support&gt;</span>
             </div>
@@ -251,7 +254,7 @@
           <article class="card">
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="card__content">
-              <img class="card__content-image card-falling-hands" src="./images/why.jpeg" alt="мем почему">
+              <img class="card__content-image filter-invert" loading="lazy" src="./images/why.jpeg" alt="мем почему">
               <span class="card__label">&lt;lifes-style: none;&gt;</span>
             </div>
             <p class="card__content-text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься.
@@ -284,7 +287,8 @@
           <article class="card">
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="card__content">
-              <img class="card__content-image card-here-now" src="./images/succes.jpeg" alt="Тони Старк">
+              <img class="card__content-image filter-hue-rotate" loading="lazy" src="./images/succes.jpeg"
+                alt="Тони Старк">
               <span class="card__label">&lt;experience&gt;</span>
             </div>
             <p class="card__content-text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых,
@@ -317,32 +321,29 @@
         </li>
       </ul>
     </section>
-  </main>
-  <footer>
-    <button class="footer__button button" type="button" onclick="window['dialog-id'].showModal();"
+    <button class="dialog-button button" type="button" onclick="window['dialog-id'].showModal();"
       aria-controls="dialog-id">
-      <svg class="flooppy-disk" viewBox="0 0 21 21" width="21" height="21">
+      <svg class="flooppy-disk button__text" viewBox="0 0 21 21" width="21" height="21">
         <use href="./svg/floppy.svg#flooppy-disk"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
+  </main>
 
-    <dialog class="dialog" id="dialog-id">
-      <div class="dialog-window">
-        <svg class="flooppy-disk" viewBox="0 0 39 39" width="39" height="39">
-          <use href="./svg/floppy.svg#flooppy-disk"></use>
-        </svg>
+  <dialog class="dialog" id="dialog-id">
+    <div class="dialog-window">
+      <svg class="flooppy-disk button__text" viewBox="0 0 39 39" width="39" height="39">
+        <use href="./svg/floppy.svg#flooppy-disk"></use>
+      </svg>
+      <span class="dialog-window-text">Вставьте дискету, чтобы продолжить</span>
+    </div>
+    <form method="dialog">
+      <button class="button dialog-window-button" type="submit">
+        <span class="button__text">ок</span>
+      </button>
+    </form>
+  </dialog>
 
-        <span>Вставьте <br> дискету, чтобы <br> продолжить</span>
-      </div>
-      <form>
-        <button class="button dialog-window-button" type="submit">
-          <span class="button__text">ок</span>
-        </button>
-      </form>
-
-    </dialog>
-  </footer>
   <script src="./scripts/like.js"></script>
 </body>
 
